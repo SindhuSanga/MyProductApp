@@ -1,0 +1,22 @@
+.products{
+    display: inline-block;
+    width:100%;
+background-color: bisque;
+box-sizing: border-box;
+box-shadow: 2px 2px 2px 2px #ce7f1b;
+text-align: -webkit-center;
+}
+
+h3.heading {
+    font-family: sans-serif;
+    color: #009688;
+    display: inline-block;
+    width:100%;
+    text-decoration-line: underline;
+}
+ul.link {
+    display: inline-block;
+    margin-left:1074px;
+    
+}
+
