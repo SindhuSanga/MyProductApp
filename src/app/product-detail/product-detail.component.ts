@@ -15,13 +15,14 @@ export class ProductDetailComponent implements OnInit {
   constructor(private route:ActivatedRoute) { }
 
   ngOnInit() {
-    this.route.params.subscribe(params=>{
-        this.productData.forEach((p:Product)=>{
-          if(p.id==params.id){
-            this.productData=p.pTypes;
-          }
-        })
-    })
-  }
+  //   this.route.params.subscribe(params=>{
+  //       this.productData.forEach((p:Product)=>{
+  //         if(p.id==params.id){
+  //           this.productData=p.pTypes;
+  //         }
+  //         console.log(this.productData)
+  //       })
+  //   })
+   }
 
 }

@@ -1,0 +1,22 @@
+img.imageClass {
+    width: 192px;
+    height: 184px;
+    box-shadow: 2px 2px 2px 2px green;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin-left: 12px;
+    margin-top: 44px;
+    margin-bottom: 44px;
+    opacity: 1;
+}
+.image {
+    margin-right: 100px;
+    overflow: hidden;
+}
+.image :hover {
+    transform: scale(1.5);
+}
+li.productsList {
+    display: flex;
+    float: left;
+}

@@ -25,10 +25,7 @@ export class ProductListComponent implements OnInit {
  getSelectedProduct(){
     
    this.selectedProd=PRODUCTS.find(product=>product.pName==this.catName)
-//    console.log(PRODUCTS);
-//    console.log(this.selectedProd);
-//    console.log(this.selectedProd.pTypes);
-//   return this.selectedProd.pTypes;
+
  }
 
 }
