@@ -3,11 +3,12 @@
     <h3 class="heading"> List Of Categories </h3>
   
     <ul>
+       
     <li *ngFor="let pList of prodList" >
     <span>  ID {{pList.id}}  :</span>  
    <a routerLink="productList/{{pList.pName}}" routerLinkActive="Active">{{pList.pName}}</a>
 </li>
 </ul>
-<a routerLink="productdetail/:data">Go To Products List</a>
+
 </div>
 
