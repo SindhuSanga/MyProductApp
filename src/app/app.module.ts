@@ -10,7 +10,7 @@ import { ProductDetailComponent } from './product-detail/product-detail.componen
 
 
 const appRoute:Routes=[
-  {path:"category" ,component:CategoryListComponent},
+  {path:"Products" ,component:CategoryListComponent},
   {path:"Products/productList/:pName" , component:ProductListComponent},
   {path:"Products/productList/:pName/productdetail/:data" ,component:ProductDetailComponent},
   {path: '', redirectTo: 'home', pathMatch: 'full'},

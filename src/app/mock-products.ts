@@ -6,7 +6,8 @@ export const PRODUCTS: Product[]= [{
    "pName": "Electronics",
    "image": "assets/images/Electronics.jpg",
    "pTypes": [{
-         "Mobile": [{
+      "catname":"Mobile",
+         "Data": [{
                "id": "Mob1",
                "type": "windows",
                "price": "999"
@@ -24,7 +25,8 @@ export const PRODUCTS: Product[]= [{
             }
          ]
       }, {
-         "Laptop": [{
+         "catName":"Laptop",
+         "Data": [{
                "id": "L1",
                "type": "Dell",
                "price": "from 39999"
@@ -38,7 +40,8 @@ export const PRODUCTS: Product[]= [{
 
       },
       {
-         "Fridge": [{
+         "catName":"Fridge",
+         "Data": [{
                "id": "F1",
                "type": "LG",
                "price": "from 39999"
@@ -58,7 +61,8 @@ export const PRODUCTS: Product[]= [{
    "pName": "Fashion",
    "image": "assets/images/fashion.jpg",
    "pTypes": [{
-      "Clothing": [{
+      "catName":"Clothing",
+      "Data": [{
             "id": "cloth1",
             "type": "MensWear",
             "price": "999"
@@ -76,7 +80,8 @@ export const PRODUCTS: Product[]= [{
          }
       ]
    }, {
-      "FootWear": [{
+      "catName":"FootWear",
+      "Data": [{
             "id": "FW1",
             "type": "Sandals",
             "price": "from 499"
@@ -95,7 +100,8 @@ export const PRODUCTS: Product[]= [{
    "pName": "Furniture",
    "image": "assets/images/furniture.jpg",
    "pTypes": [{
-      "Wardrobe": [{
+      "catName":"Wardrobe",
+      "Data": [{
             "id": "W01",
             "type": "Single",
             "price": "999"
@@ -107,7 +113,8 @@ export const PRODUCTS: Product[]= [{
          }
       ]
    }, {
-      "Beds": [{
+      "catName":"Beds",
+      "Data": [{
             "id": "Bed1",
             "type": "kingSize",
             "price": "from 499"
