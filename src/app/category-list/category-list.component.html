@@ -3,7 +3,7 @@
     <h3 class="heading"> List Of Categories </h3>
     <ul>  
     <li class="productsList" *ngFor="let pList of prodList" >        
-   <a routerLink="productList/{{pList.pName}}" routerLinkActive="Active">{{pList.pName}}</a>
+   <a class="panel" routerLink="productList/{{pList.pName}}" routerLinkActive="Active">{{pList.pName}}</a>
    <div class="image">
         <img class="imageClass" [src]="pList.image">
        </div>

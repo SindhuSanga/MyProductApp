@@ -11,7 +11,6 @@ export class CategoryListComponent implements OnInit {
 
   Product:Product[];
   prodList=PRODUCTS;
-  selectedProduct:Product;
 
  
   constructor() { }

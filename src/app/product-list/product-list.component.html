@@ -1,16 +1,13 @@
 <p>
   <a routerLink="productdetail/:data">Get the Full Details</a>
 </p>
-
-  
-      <h3>{{selectedProd.pName}} :</h3>
-      <span>
- <select>
-     <option >
-          {{selectedProd.pTypes.catname}}
-      </option>
-  </select>
-  </span>
+<h3>{{selectedProd.pName}} :</h3>
+ <div class="ngContainer">
+   <ul class="catList">
+     <li>{{selectedProd.pTypes.catname}}</li>
+     <img class="imgclass" [src]="data1.image"/>
+   </ul>
+ </div>   
 
 
 

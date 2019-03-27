@@ -10,13 +10,18 @@ img.imageClass {
     opacity: 1;
 }
 .image {
-    margin-right: 100px;
     overflow: hidden;
 }
 .image :hover {
     transform: scale(1.5);
 }
 li.productsList {
-    display: flex;
     float: left;
+    list-style: none;
+    text-align: center;
+    margin-right: 100px;
+}
+a.panel {
+    font-family: fantasy;
+    font-size: larger;
 }

@@ -7,25 +7,30 @@ export const PRODUCTS: Product[]= [{
    "image": "assets/images/Electronics.jpg",
    "pTypes": [{
       "catname":"Mobile",
+      "image":"assets/images/mobile.jpg",
          "Data": [{
                "id": "Mob1",
                "type": "windows",
-               "price": "999"
+               "price": "999",
+               "image":"assets/images/windows.jpg"
             },
             {
                "id": "Mob2",
                "type": "Android",
-               "price": "From 3999"
+               "price": "From 3999",
+               "image":"assets/images/Android.jpg"
             },
             {
                "id": "Mob3",
                "type": "iphone",
-               "price": "from 999"
+               "price": "from 999",
+               "image":"assets/images/Iphone.jpg"
 
             }
          ]
       }, {
          "catName":"Laptop",
+         "image":"assets/images/laptop.jpg",
          "Data": [{
                "id": "L1",
                "type": "Dell",
@@ -41,6 +46,7 @@ export const PRODUCTS: Product[]= [{
       },
       {
          "catName":"Fridge",
+         "image":"assets/images/fridge.jpg",
          "Data": [{
                "id": "F1",
                "type": "LG",

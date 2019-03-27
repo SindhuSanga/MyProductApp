@@ -11,8 +11,12 @@ import {ActivatedRoute} from '@angular/router';
 })
 export class ProductListComponent implements OnInit {
   selectedProd:Product;
-  selectedProductTypes:Product;
+  selectedProductTypes:any;
+  selectedProduct:any;
   catName:string;
+   data1=PRODUCTS[0].pTypes;
+   data2=PRODUCTS[1].pTypes;
+   data3=PRODUCTS[2].pTypes;
   constructor(private route:ActivatedRoute) { 
     this.route.paramMap.subscribe(params=>{
       this.catName =  params.get("pName")
@@ -23,7 +27,7 @@ export class ProductListComponent implements OnInit {
  
   ngOnInit() {
     this.getSelectedProduct()
-//this.getSelectedProductTypes(id:number)
+this.getSelectedProductData()
 
   }
  getSelectedProduct(){
@@ -31,10 +35,23 @@ export class ProductListComponent implements OnInit {
    this.selectedProd=PRODUCTS.find(product=>product.pName==this.catName)
 
  }
-getSelectedProductTypes(id:number){
-  this.selectedProductTypes=this.selectedProductTypes
-  .filter(prodType => prodType.pTypes.catname === PRODUCTS.pTypes.catname) 
-  });
+getSelectedProductData(){
+  for(this.selectedProduct in this.data1){
+   if(this.selectedProd.pTypes==this.data1[this.selectedProduct]){
+    console.log(this.selectedProduct);
+    return this.data1[this.selectedProduct];
+  }
+  else if(this.selectedProd.pTypes==this.data2[this.selectedProduct]){
+    return this.data2[this.selectedProduct];
+  }
+  else{
+    return this.data3[this.selectedProduct];
+  }
+}
+  
   
 }
+
+
 }
+
