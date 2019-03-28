@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {Product } from '../product';
-import {PRODUCTS} from '../mock-products';
+import {ProductCategory} from '../mock-category-detail';
 import {ActivatedRoute} from '@angular/router';
 
 
@@ -14,10 +14,12 @@ export class ProductListComponent implements OnInit {
   selectedProductTypes:any;
   selectedProduct:any;
   catName:string;
-   data1=PRODUCTS[0].pTypes;
-   data2=PRODUCTS[1].pTypes;
-   data3=PRODUCTS[2].pTypes;
+  
+  //  data1=PRODUCTS[0].pTypes;
+  //  data2=PRODUCTS[1].pTypes;
+  //  data3=PRODUCTS[2].pTypes;
   constructor(private route:ActivatedRoute) { 
+    console.log(ProductCategory);
     this.route.paramMap.subscribe(params=>{
       this.catName =  params.get("pName")
       console.log(this.catName)
@@ -32,22 +34,23 @@ this.getSelectedProductData()
   }
  getSelectedProduct(){
     
-   this.selectedProd=PRODUCTS.find(product=>product.pName==this.catName)
+   this.selectedProd=ProductCategory.find(product=>product.pName==this.catName)
+   console.log(this.selectedProd)
 
  }
 getSelectedProductData(){
-  for(this.selectedProduct in this.data1){
-   if(this.selectedProd.pTypes==this.data1[this.selectedProduct]){
-    console.log(this.selectedProduct);
-    return this.data1[this.selectedProduct];
-  }
-  else if(this.selectedProd.pTypes==this.data2[this.selectedProduct]){
-    return this.data2[this.selectedProduct];
-  }
-  else{
-    return this.data3[this.selectedProduct];
-  }
-}
+  // for(this.selectedProduct in this.data1){
+  //  if(this.selectedProd.pTypes==this.data1[this.selectedProduct]){
+  //   console.log(this.selectedProduct);
+  //   return this.data1[this.selectedProduct];
+  // }
+  // else if(this.selectedProd.pTypes==this.data2[this.selectedProduct]){
+  //   return this.data2[this.selectedProduct];
+  // }
+  // else{
+  //   return this.data3[this.selectedProduct];
+  // }
+// }
   
   
 }

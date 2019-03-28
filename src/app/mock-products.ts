@@ -1,12 +1,13 @@
 
 import { Product } from './product';
 
-export const PRODUCTS: Product[]= [{
+export const PRODUCTS: Product[]= [
+   {
    "id": 1,
    "pName": "Electronics",
    "image": "assets/images/Electronics.jpg",
    "pTypes": [{
-      "catname":"Mobile",
+      "catName":"Mobile",
       "image":"assets/images/mobile.jpg",
          "Data": [{
                "id": "Mob1",
