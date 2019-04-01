@@ -1,5 +1,13 @@
 <p>
   product-detail works!
 </p>
-<h1>Products Details</h1>
+<h1 *ngIf="eachProductDetail !==0">{{eachProductDetail.catname}} Details</h1>
+<div >
+  
 
+  <h3 *ngFor="let details of pData.Data"></h3>
+  <ul>
+    <li>Price:{{details.price}}</li>
+  </ul>
+
+</div>

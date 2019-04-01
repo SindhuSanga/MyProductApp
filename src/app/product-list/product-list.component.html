@@ -1,16 +1,13 @@
-<p>
-  <a routerLink="selectedProd.pName/:data">Get the Full Details</a>
-</p>
-
- 
 
  <div class="product-list">
   <h3>{{selectedProd.pName}} :</h3>
-  <div class="ngContainer">
-    <div *ngFor="let item of selectedProd.pTypes">
+  <div *ngFor="let item of selectedProd.pTypes">
+    <div class="ngContainer">
         <ul class="catList">
-            <li>{{item.catName}}</li>
+            <li><a routerLink="{{item.catname}}">{{item.catname}}</a></li>
+            <div class="image">
             <img class="imgclass" [src]="item.image"/>
+            </div>
           </ul>
     </div>
    

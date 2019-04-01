@@ -7,17 +7,17 @@ export const ProductCategory: Product[] =
 		"pName": "Electronics",
 		"image": "assets/images/Electronics.jpg",
 		"pTypes": [{
-				"catName": "Mobile",
+				"catname": "Mobile",
 				"image": "assets/images/mobile.jpg"
 
 			},
 			{
-				"catName": "Laptop",
+				"catname": "Laptop",
 				"image": "assets/images/laptop.jpg"
 
 			},
 			{
-				"catName": "Fridge",
+				"catname": "Fridge",
 				"image": "assets/images/fridge.jpg"
 
 			}
@@ -30,10 +30,10 @@ export const ProductCategory: Product[] =
 		"pName": "Fashion",
 		"image": "assets/images/fashion.jpg",
 		"pTypes": [{
-			"catName": "Clothing",
+			"catname": "Clothing",
 			"image": "assets/images/fashion.jpg"
 		}, {
-			"catName": "FootWear",
+			"catname": "FootWear",
 			"image": "assets/images/fashion.jpg"
 		}]
 	},
@@ -42,10 +42,10 @@ export const ProductCategory: Product[] =
 		"pName": "Furniture",
 		"image": "assets/images/furniture.jpg",
 		"pTypes": [{
-			"catName": "Wardrobe",
+			"catname": "Wardrobe",
 			"image": "assets/images/furniture.jpg"
 		}, {
-			"catName": "Beds",
+			"catname": "Beds",
 			"image": "assets/images/furniture.jpg"
 
 
