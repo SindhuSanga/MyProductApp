@@ -35,11 +35,13 @@ export const PRODUCTS: Product[] = [
       "Data": [{
          "id": "L1",
          "type": "Dell",
+         "image": "assets/images/laptop.jpg",
          "price": "from 39999"
       },
       {
          "id": "L2",
          "type": "HP",
+         "image": "assets/images/laptop.jpg",
          "price": "from 24999"
       }
       ]
@@ -52,11 +54,13 @@ export const PRODUCTS: Product[] = [
       "Data": [{
          "id": "F1",
          "type": "LG",
+         "image": "assets/images/fridge.jpg",
          "price": "from 39999"
       },
       {
          "id": "F2",
          "type": "Samsung",
+         "image": "assets/images/fridge.jpg",
          "price": "from 24999"
       }
       ]
@@ -72,16 +76,19 @@ export const PRODUCTS: Product[] = [
       "Data": [{
          "id": "cloth1",
          "type": "MensWear",
+         "image": "assets/images/jeans.jpg",
          "price": "999"
       },
       {
          "id": "cloth2",
          "type": "Women'sWear",
+         "image": "assets/images/salwar.jpg",
          "price": "From 3999"
       },
       {
-         "id": "cloth2",
+         "id": "cloth3",
          "type": "KidsWear",
+         "image": "assets/images/fashion.jpg",
          "price": "from 999"
 
       }
@@ -92,11 +99,13 @@ export const PRODUCTS: Product[] = [
       "Data": [{
          "id": "FW1",
          "type": "Sandals",
+         "image": "assets/images/fashion.jpg",
          "price": "from 499"
       },
       {
          "id": "FW1",
          "type": "LeatherBoots",
+         "image": "assets/images/fashion.jpg",
          "price": "from 4999"
       }
       ]
@@ -112,11 +121,13 @@ export const PRODUCTS: Product[] = [
       "Data": [{
          "id": "W01",
          "type": "Single",
+         "image": "assets/images/furniture.jpg",
          "price": "999"
       },
       {
          "id": "W02",
          "type": "Double",
+         "image": "assets/images/furniture.jpg",
          "price": "From 3999"
       }
       ]
@@ -126,11 +137,13 @@ export const PRODUCTS: Product[] = [
       "Data": [{
          "id": "Bed1",
          "type": "kingSize",
+         "image": "assets/images/furniture.jpg",
          "price": "from 499"
       },
       {
          "id": "Bed2",
          "type": "QueenSize",
+         "image": "assets/images/furniture.jpg",
          "price": "from 4999"
       }
       ]

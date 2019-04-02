@@ -12,34 +12,34 @@ import { ActivatedRoute } from '@angular/router';
   styleUrls: ['./product-detail.component.css']
 })
 export class ProductDetailComponent implements OnInit {
-  
+
   pData: any;
-  selectcatName:string;
-  eachProductDetail:any;
+  prodData: string;
+  selectcatName: string;
+  eachProductDetail: any;
   constructor(private route: ActivatedRoute) {
-    this.route.paramMap.subscribe(params=>{
-      this.selectcatName =  params.get("pTypes.catname")
+    this.route.paramMap.subscribe(params => {
+      this.selectcatName = params.get("pTypes.catname")
+      this.prodData = params.get("pName")
       console.log(this.selectcatName)
-   })
-   }
+      console.log(this.prodData)
+    })
+  }
 
   ngOnInit() {
-   this.getProductDetail();
-  // this.getEachProductDetail();
+    this.getProductDetail();
+    this.getEachProductDetail();
   }
   getProductDetail() {
-    for (let item in PRODUCTS) {
-      console.log(item);
-      for (let subItem in PRODUCTS[item]) {
-        if (subItem == "pTypes") {
-          this.pData =PRODUCTS[item][subItem]
-          console.log(this.pData);
-          // this.eachProductDetail=this.pData.filter(prod =>prod.catname==this.selectcatName )
-          // console.log(this.eachProductDetail);
-        }
-      }
-     }
-     return this.pData;
+    this.pData = PRODUCTS.filter(item =>item.pName == this.prodData);
+    console.log(this.pData);
   }
-
+  getEachProductDetail() {
+    this.pData.filter(product => {
+      this.eachProductDetail = product.pTypes.filter(value => {
+        return value.catname == this.selectcatName;
+      });
+    });
+    console.log(this.eachProductDetail);
+  }
 }
