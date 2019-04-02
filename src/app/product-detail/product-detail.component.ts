@@ -35,11 +35,12 @@ export class ProductDetailComponent implements OnInit {
     console.log(this.pData);
   }
   getEachProductDetail() {
-    this.pData.filter(product => {
-      this.eachProductDetail = product.pTypes.filter(value => {
+    // this.pData.filter(product => {
+      this.eachProductDetail =  this.pData[0].pTypes.filter(value => {
+        console.log(value);
         return value.catname == this.selectcatName;
       });
-    });
+    // });
     console.log(this.eachProductDetail);
   }
 }

@@ -6,7 +6,8 @@ export const PRODUCTS: Product[] = [
       "id": 1,
 		"pName": "Electronics",
 		"image": "assets/images/Electronics.jpg",
-		"pTypes": [{
+		"pTypes": [
+         {
       "catname": "Mobile",
       "image": "assets/images/mobile.jpg",
       "Data": [{
