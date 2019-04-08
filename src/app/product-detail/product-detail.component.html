@@ -1,17 +1,16 @@
-<p>
-  product-detail works! {{pData.pName}}
-</p>
 <h1>{{eachProductDetail[0].catname}} Details</h1>
-<img class="img-class" [src]="eachProductDetail[0].image" />
+<!-- <img class="img-class" [src]="eachProductDetail[0].image" /> -->
 
 
-<table class="container">
-  <tr *ngFor="let details of eachProductDetail[0].Data">
-    <td>
-      <img class="img-class" [src]="details.image" />
-    </td>
-    <td>Type: {{details.type}}</td>
-    <td>Price: {{details.price}}</td>
-  </tr>
-</table>
-
+<div class="container">
+  <div *ngFor="let details of eachProductDetail[0].Data">
+    <img class="img-class" [src]="details.image" />
+    <div class="details">
+      <ul>
+          <li>Type: {{details.type}}</li>
+          <li>Price: {{details.price}}</li>
+      </ul>
+      
+    </div>
+  </div>
+</div>

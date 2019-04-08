@@ -1,0 +1,25 @@
+img.img-class {
+    width: 240px;
+    height: 200px;
+    box-sizing: border-box;
+    box-shadow: 2px 2px 2px 2px rebeccapurple;
+    cursor: pointer;
+    transition: 1s;
+    position: absolute;
+}
+.img-class {
+    overflow: hidden;
+}
+.img-class :hover {
+    transform: scale(1.5);
+}
+.details {
+    margin-top: 209px;
+}
+li {
+    list-style: none;
+}
+div {
+    float: left;
+    margin-right: 125px;
+}

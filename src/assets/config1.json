@@ -1,0 +1,17 @@
+[
+    {
+        "id": 1,
+        "pName": "Electronics",
+        "image": "assets/images/Electronics.jpg"
+    },
+    {
+        "id": 2,
+        "pName": "Fashion",
+        "image": "assets/images/fashion.jpg"
+    },
+    {
+        "id": 3,
+        "pName": "Furniture",
+        "image": "assets/images/furniture.jpg"
+    }
+]

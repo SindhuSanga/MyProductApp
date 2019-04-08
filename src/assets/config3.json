@@ -1,0 +1,126 @@
+[
+    {
+        "Data1": [
+            {
+                "id": "Mob1",
+                "type": "windows",
+                "price": "999",
+                "image": "assets/images/windows.jpg"
+            },
+            {
+                "id": "Mob2",
+                "type": "Android",
+                "price": "From 3999",
+                "image": "assets/images/Android.jpg"
+            },
+            {
+                "id": "Mob3",
+                "type": "iphone",
+                "price": "from 999",
+                "image": "assets/images/Iphone.jpg"
+            }
+        ]
+    },
+    {
+        "Data2": [
+            {
+                "id": "L1",
+                "type": "Dell",
+                "image": "assets/images/laptop.jpg",
+                "price": "from 39999"
+            },
+            {
+                "id": "L2",
+                "type": "HP",
+                "image": "assets/images/laptop.jpg",
+                "price": "from 24999"
+            }
+        ]
+    },
+    {
+        "Data3": [
+            {
+                "id": "F1",
+                "type": "LG",
+                "image": "assets/images/fridge.jpg",
+                "price": "from 39999"
+            },
+            {
+                "id": "F2",
+                "type": "Samsung",
+                "image": "assets/images/fridge.jpg",
+                "price": "from 24999"
+            }
+        ]
+    },
+    {
+        "Data4": [
+            {
+                "id": "cloth1",
+                "type": "MensWear",
+                "image": "assets/images/jeans.jpg",
+                "price": "999"
+            },
+            {
+                "id": "cloth2",
+                "type": "Women'sWear",
+                "image": "assets/images/salwar.jpg",
+                "price": "From 3999"
+            },
+            {
+                "id": "cloth3",
+                "type": "KidsWear",
+                "image": "assets/images/fashion.jpg",
+                "price": "from 999"
+            }
+        ]
+    },
+    {
+        "Data5": [
+            {
+                "id": "FW1",
+                "type": "Sandals",
+                "image": "assets/images/fashion.jpg",
+                "price": "from 499"
+            },
+            {
+                "id": "FW1",
+                "type": "LeatherBoots",
+                "image": "assets/images/fashion.jpg",
+                "price": "from 4999"
+            }
+        ]
+    },
+    {
+        "Data6": [
+            {
+                "id": "W01",
+                "type": "Single",
+                "image": "assets/images/furniture.jpg",
+                "price": "999"
+            },
+            {
+                "id": "W02",
+                "type": "Double",
+                "image": "assets/images/furniture.jpg",
+                "price": "From 3999"
+            }
+        ]
+    },
+    {
+        "Data7": [
+            {
+                "id": "Bed1",
+                "type": "kingSize",
+                "image": "assets/images/furniture.jpg",
+                "price": "from 499"
+            },
+            {
+                "id": "Bed2",
+                "type": "QueenSize",
+                "image": "assets/images/furniture.jpg",
+                "price": "from 4999"
+            }
+        ]
+    }
+]
