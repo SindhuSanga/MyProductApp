@@ -2,7 +2,7 @@ img.img-class {
     width: 240px;
     height: 200px;
     box-sizing: border-box;
-    box-shadow: 2px 2px 2px 2px rebeccapurple;
+    box-shadow: 2px 2px 2px 2px whitesmoke;
     cursor: pointer;
     transition: 1s;
     position: absolute;

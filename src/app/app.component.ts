@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Product-app';
+  showDetails:boolean=false;
+
+toggleDetails() : void  {
+  this.showDetails = !this.showDetails;
+}
 }

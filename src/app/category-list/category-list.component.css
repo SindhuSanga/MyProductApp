@@ -1,7 +1,7 @@
 img.imageClass {
     width: 192px;
     height: 184px;
-    box-shadow: 2px 2px 2px 2px green;
+    box-shadow: 2px 2px 2px 2px  #0a0a0a0d;
     box-sizing: border-box;
     cursor: pointer;
     margin-left: 12px;

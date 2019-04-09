@@ -1,4 +1,7 @@
-<div class="products">
+<div class="products" id="cssmenu">
+    
+      <a href="/" class="headerLogo" ><img src="assets/images/logo.jpg"/></a>
+    
     <input class=" desktop-searchbar" placeholder="Search for Products,Brands" >
     
     <ul >
@@ -7,13 +10,16 @@
   
             </li>
       <li class="nav-bar">
-          <a routerLink="About">About</a>
+          <a routerLink="Config">Services</a>
 
           </li>
-      <li class="nav-bar">
-          <a routerLink="Products">Products</a>
-          
-        </li>
+          <li class="nav-bar"  (click)="toggleDetails()"><a routerLink="Products"> Products</a>    
+          <ul>
+               <li class="sub-products" *ngIf="showDetails"><a href="#">Menu 1</a></li>
+               <li class="sub-products" *ngIf="showDetails"><a href="#">Menu 2</a></li>
+            </ul>
+         </li>
+      
       <li class="nav-bar">
           <a routerLink="Contact">Contact Us </a>
         </li>
@@ -22,7 +28,24 @@
  
   </div>
   
-  
+  <!-- <div id="cssmenu">
+      <ul>
+         <li><a href="#" target="_blank"> Home</a></li>
+         <li class="has-sub"><a href="#"><button class="dropbtn"> Menus</button></a>    
+          <ul>
+               <li class="has-sub"><a href="#">Menu 1</a>
+                  <ul>
+                     <li><a href="#">Menu 1.1</a></li>
+                     <li><a href="#">Menu 1.2</a></li>
+                  </ul>
+               </li>
+               <li><a href="#">Menu 2</a></li>
+            </ul>
+         </li>
+         <li><a href="#"> Settings</a></li>
+         <li><a href="#"> Contact</a></li>
+      </ul>
+    </div> -->
   <router-outlet></router-outlet>
 
 
