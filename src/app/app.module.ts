@@ -10,7 +10,7 @@ import { ProductListComponent } from './product-list/product-list.component';
 import { ProductDetailComponent } from './product-detail/product-detail.component';
 import { ConfigComponent } from './config/config.component';
 import { HomeComponent } from './home/home.component';
-
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 
 const appRoute:Routes=[
   {path:"Home" ,component:HomeComponent},
@@ -30,14 +30,15 @@ const appRoute:Routes=[
     ProductDetailComponent,
     ConfigComponent,
     HomeComponent,
-    
+   
     
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     RouterModule.forRoot(appRoute),
-    HttpClientModule
+    HttpClientModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]

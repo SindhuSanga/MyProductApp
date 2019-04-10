@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -11,9 +11,9 @@ export class HomeComponent implements OnInit {
 
   ngOnInit() {
   }
-  CarouselDemoCtrl($scope){
-    $scope.myInterval = 3000;
-    $scope.slides = [
+ 
+
+    slides = [
       {
         image: 'http://lorempixel.com/400/200/'
       },
@@ -27,5 +27,5 @@ export class HomeComponent implements OnInit {
         image: 'http://lorempixel.com/400/200/people'
       }
     ];
-  }
+
 }
