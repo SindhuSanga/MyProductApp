@@ -15,16 +15,16 @@ export class HomeComponent implements OnInit {
 
     slides = [
       {
-        image: 'http://lorempixel.com/400/200/'
+        image: "assets/images/slider1.jpg"
       },
       {
-        image: 'http://lorempixel.com/400/200/food'
+        image: "assets/images/slider2.jpg"
       },
       {
-        image: 'http://lorempixel.com/400/200/sports'
+        image: "assets/images/slider3.jpg"
       },
       {
-        image: 'http://lorempixel.com/400/200/people'
+        image: "assets/images/slider4.jpg"
       }
     ];
 

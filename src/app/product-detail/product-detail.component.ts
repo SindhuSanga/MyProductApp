@@ -4,20 +4,25 @@ import { PRODUCTS } from '../mock-products';
 
 
 import { ActivatedRoute } from '@angular/router';
+import { Config,ConfigService } from './productdetail-service';
+
 
 
 @Component({
   selector: 'app-product-detail',
   templateUrl: './product-detail.component.html',
+  providers: [ ConfigService ],
   styleUrls: ['./product-detail.component.css']
 })
 export class ProductDetailComponent implements OnInit {
-
+  error: any;
+  headers: string[];
+  config: Config;
   pData: any;
   prodData: string;
   selectcatName: string;
   eachProductDetail: any;
-  constructor(private route: ActivatedRoute) {
+  constructor(private route: ActivatedRoute,private configService: ConfigService) {
     this.route.paramMap.subscribe(params => {
       this.selectcatName = params.get("pTypes.catname")
       this.prodData = params.get("pName")
@@ -35,12 +40,25 @@ export class ProductDetailComponent implements OnInit {
     console.log(this.pData);
   }
   getEachProductDetail() {
-    // this.pData.filter(product => {
+    
       this.eachProductDetail =  this.pData[0].pTypes.filter(value => {
         console.log(value);
         return value.catname == this.selectcatName;
       });
-    // });
+   
     console.log(this.eachProductDetail);
+  }
+  showConfigResponse() {
+    this.configService.getConfigResponse()
+      .subscribe(resp => {
+        console.log(resp)
+        const keys = resp.headers.keys();
+        this.headers = keys.map(key =>
+          `${key}: ${resp.headers.get(key)}`);
+
+          
+        this.config = { ... resp.body };
+        console.log(keys)
+      });
   }
 }

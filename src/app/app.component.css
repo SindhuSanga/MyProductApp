@@ -4,42 +4,51 @@
 background-color: #1c0384eb;
 box-sizing: border-box;
 box-shadow: 2px 2px 2px 2px white;
-text-align: -webkit-center;
-line-height: 0.9em;
+height: 80px;
 }
-img {
-    width: 69px;
-    height: 45px;
-    margin-left: -404px;
-    position: absolute;
-    vertical-align: middle;
-    cursor: pointer;
-    padding: 3px;
-    background-color: #2700ff;
+img.logo {
+    height: 79px;
+    margin-left: 20px;
 }
-
-input.desktop-searchbar {
-    width: 25%;
-    margin-top: 13px;
-    padding:10px;
+.header-Logo {
+    height: 52px;
 }
+input.desktop-searchbar[_ngcontent-c0] {
+        width: 25%;
+        margin-left: 268px;
+        position: absolute;
+        margin-top: -3%;
+    }
 ul {
     margin-top: -16px;
 }
 li.nav-bar {
     float: right;
     width: 8%;
-    display: flex;
+   list-style:none;
 }
 a {
     color: white;
 }
-#cssmenu > ul {
+/* li.nav-bar .nav  #hoverItem{
+    color: #3f3f3f;
+    border-color: #3f3f3f;
+    
+} */
+#hoverItem :hover ul #HiddenText{
+    display:block;
+}
+.sub-products{
+    display:none;
+    list-style: none;
+    background-color: black;
+}
+/* #cssmenu > ul {
     list-style: inside none;
     margin: 0;
     padding: 0;
-}
-#cssmenu ul li li li> ul li a {
+} */
+/* #cssmenu ul li li li> ul li a {
     outline: none; 
     display: block;
      position: relative;
@@ -53,4 +62,4 @@ a {
 #cssmenu > ul > li.sub-products > a:hover, #cssmenu > ul > li.sub-products:hover > a {
     background: #3f3f3f;
     border-color: #3f3f3f;
-}
+} */
