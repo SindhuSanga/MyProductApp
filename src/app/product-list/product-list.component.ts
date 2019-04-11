@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Product } from '../product';
-import { ProductCategory } from '../mock-category-detail';
+// import { ProductCategory } from '../mock-category-detail';
 import { ActivatedRoute } from '@angular/router';
 import { Config,ConfigService } from './productlist-service';
 
@@ -17,10 +17,11 @@ export class ProductListComponent implements OnInit {
 
   error: any;
   headers: string[];
+  categoryData: [];
   config: Config;
 
   constructor(private route: ActivatedRoute,private configService: ConfigService) {
-    console.log(ProductCategory);
+    // console.log(ProductCategory);
     this.route.paramMap.subscribe(params => {
       this.catName = params.get("pName")
       console.log(this.catName);
@@ -29,27 +30,25 @@ export class ProductListComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.getSelectedProduct()
-
+   
+    this.showConfigResponse();
+ 
 
   }
   getSelectedProduct() {
 
-    this.selectedProd = ProductCategory.find(product => product.pName == this.catName)
+    this.selectedProd =  this.categoryData.find(product => product.pName == this.catName)
     console.log(this.selectedProd)
 
   }
- showConfigResponse() {
+  showConfigResponse() {
     this.configService.getConfigResponse()
       .subscribe(resp => {
         console.log(resp)
-        const keys = resp.headers.keys();
-        this.headers = keys.map(key =>
-          `${key}: ${resp.headers.get(key)}`);
+       this.categoryData =resp.body
 
-          
-        this.config = { ... resp.body };
-        console.log(keys)
+       this.getSelectedProduct()
+       
       });
   }
 

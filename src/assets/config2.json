@@ -1,5 +1,5 @@
 [
-    {
+    {  "pName": "Electronics",
         "pTypes": [
             {
                 "catname": "Mobile",
@@ -16,6 +16,7 @@
         ]
     },
     {
+        "pName": "Fashion",
         "pTypes": [
             {
                 "catname": "Clothing",
@@ -28,6 +29,7 @@
         ]
     },
     {
+        "pName": "Furniture",
         "pTypes": [
             {
                 "catname": "Wardrobe",

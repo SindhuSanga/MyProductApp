@@ -5,10 +5,16 @@ import { HttpErrorResponse, HttpResponse } from '@angular/common/http';
 import { Observable, throwError } from 'rxjs';
 import { catchError, retry } from 'rxjs/operators';
 
-export interface Config {
+export interface Config1 {
    
     "catname": "string",
     "image": "string",
+   
+  }
+  export interface Config {
+   
+    "pName": "string",
+    "pTypes": Config1[],
    
   }
 
