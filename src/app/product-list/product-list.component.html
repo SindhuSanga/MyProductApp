@@ -1,16 +1,14 @@
-
- <div class="product-list">
+<div class="product-list">
   <h3>{{selectedProd.pName}} :</h3>
   <div *ngFor="let item of selectedProd.pTypes">
     <div class="ngContainer">
-        <ul class="catList">
-            <li><a routerLink="{{item.catname}}">{{item.catname}}</a></li>
-            <div class="image">
-            <img class="imgclass" [src]="item.image"/>
-            </div>
-          </ul>
+      <ul class="catList">
+        <li><a routerLink="{{item.catname}}">{{item.catname}}</a></li>
+        <div class="image">
+          <img class="imgclass" [src]="item.image" />
+        </div>
+      </ul>
     </div>
-   
-  </div>   
- </div>
 
+  </div>
+</div>

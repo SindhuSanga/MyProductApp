@@ -1,6 +1,11 @@
 [
     {
-        "Data1": [
+        "pName": "Electronics",
+        "pTypes":
+        [
+            {
+        "catname":"Mobile",
+        "Data": [
             {
                 "id": "Mob1",
                 "type": "windows",
@@ -20,9 +25,10 @@
                 "image": "assets/images/Iphone.jpg"
             }
         ]
+    
     },
-    {
-        "Data2": [
+    { "catname":"Laptop",
+        "Data": [
             {
                 "id": "L1",
                 "type": "Dell",
@@ -38,7 +44,8 @@
         ]
     },
     {
-        "Data3": [
+        "catname":"Fridge",
+        "Data": [
             {
                 "id": "F1",
                 "type": "LG",
@@ -52,9 +59,14 @@
                 "price": "from 24999"
             }
         ]
+    }
+]
     },
-    {
-        "Data4": [
+    {"pName": "Fashion",
+        "pTypes":
+        [{
+        "catname":"Clothing",
+        "Data": [
             {
                 "id": "cloth1",
                 "type": "MensWear",
@@ -76,7 +88,8 @@
         ]
     },
     {
-        "Data5": [
+        "catname":"FootWear",
+        "Data": [
             {
                 "id": "FW1",
                 "type": "Sandals",
@@ -90,9 +103,13 @@
                 "price": "from 4999"
             }
         ]
+    }]
     },
-    {
-        "Data6": [
+    {"pName": "Furniture",
+        "pTypes": [
+            {
+                "catname": "Wardrobe",
+        "Data": [
             {
                 "id": "W01",
                 "type": "Single",
@@ -107,8 +124,9 @@
             }
         ]
     },
-    {
-        "Data7": [
+    {  
+        "catname": "Beds",
+        "Data": [
             {
                 "id": "Bed1",
                 "type": "kingSize",
@@ -122,5 +140,6 @@
                 "price": "from 4999"
             }
         ]
+    }]
     }
 ]

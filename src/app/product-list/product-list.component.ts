@@ -2,12 +2,12 @@ import { Component, OnInit } from '@angular/core';
 import { Product } from '../product';
 // import { ProductCategory } from '../mock-category-detail';
 import { ActivatedRoute } from '@angular/router';
-import { Config,ConfigService } from './productlist-service';
+import { Config,ProductListConfigService } from './productlist-service';
 
 @Component({
   selector: 'app-product-list',
   templateUrl: './product-list.component.html',
-  providers: [ ConfigService ],
+  providers: [ ProductListConfigService ],
   styleUrls: ['./product-list.component.css']
 })
 export class ProductListComponent implements OnInit {
@@ -17,10 +17,10 @@ export class ProductListComponent implements OnInit {
 
   error: any;
   headers: string[];
-  categoryData: [];
+  categoryData: Config;
   config: Config;
 
-  constructor(private route: ActivatedRoute,private configService: ConfigService) {
+  constructor(private route: ActivatedRoute,private configService: ProductListConfigService) {
     // console.log(ProductCategory);
     this.route.paramMap.subscribe(params => {
       this.catName = params.get("pName")

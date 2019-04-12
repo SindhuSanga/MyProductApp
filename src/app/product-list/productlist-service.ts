@@ -12,6 +12,7 @@ export interface Config1 {
    
   }
   export interface Config {
+    find(arg0: (product: any) => boolean): import("../product").Product;
    
     "pName": "string",
     "pTypes": Config1[],
@@ -19,7 +20,7 @@ export interface Config1 {
   }
 
 @Injectable()
-export class ConfigService {
+export class ProductListConfigService {
   configUrl = 'assets/config2.json';
   constructor(private http: HttpClient) { }
 

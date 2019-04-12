@@ -4,17 +4,18 @@ import { PRODUCTS } from '../mock-products';
 
 
 import { ActivatedRoute } from '@angular/router';
-import { Config,ConfigService } from './productdetail-service';
+import { Config,ProductDetailConfigService } from './productdetail-service';
 
 
 
 @Component({
   selector: 'app-product-detail',
   templateUrl: './product-detail.component.html',
-  providers: [ ConfigService ],
+  providers: [ ProductDetailConfigService ],
   styleUrls: ['./product-detail.component.css']
 })
 export class ProductDetailComponent implements OnInit {
+  productDetail:Config[];
   error: any;
   headers: string[];
   config: Config;
@@ -22,7 +23,7 @@ export class ProductDetailComponent implements OnInit {
   prodData: string;
   selectcatName: string;
   eachProductDetail: any;
-  constructor(private route: ActivatedRoute,private configService: ConfigService) {
+  constructor(private route: ActivatedRoute,private configService: ProductDetailConfigService) {
     this.route.paramMap.subscribe(params => {
       this.selectcatName = params.get("pTypes.catname")
       this.prodData = params.get("pName")
@@ -36,7 +37,7 @@ export class ProductDetailComponent implements OnInit {
     this.getEachProductDetail();
   }
   getProductDetail() {
-    this.pData = PRODUCTS.filter(item =>item.pName == this.prodData);
+    this.pData =this.productDetail.filter(item =>item.pName == this.prodData);
     console.log(this.pData);
   }
   getEachProductDetail() {

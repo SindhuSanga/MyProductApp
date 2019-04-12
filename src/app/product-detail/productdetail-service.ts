@@ -6,14 +6,24 @@ import { Observable, throwError } from 'rxjs';
 import { catchError, retry } from 'rxjs/operators';
 
 export interface Config {
+ // filter(arg0: (item: any) => boolean): any;
+  
+  "pName":"string",
+  "pTypes":Config1
+  }
+  export interface Config1 {
+    "catname":"string",
+    "Data":Config2
+  }
+  export interface Config2 {
     "type":"string",
     "id": "string",
     "image": "string",
-    "price":"string",
+    "price":"string"
   }
 
 @Injectable()
-export class ConfigService {
+export class ProductDetailConfigService {
   configUrl = 'assets/config3.json';
   constructor(private http: HttpClient) { }
 
