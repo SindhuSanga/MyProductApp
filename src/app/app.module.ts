@@ -11,7 +11,7 @@ import { ProductDetailComponent } from './product-detail/product-detail.componen
 import { ConfigComponent } from './config/config.component';
 import { HomeComponent } from './home/home.component';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
-import {ProductDashboardModule} from './product-dashboard/product-dashboard.module'
+// import {ProductDashboardModule} from './product-dashboard/product-dashboard.module';
 const appRoute:Routes=[
   {path:"Home" ,component:HomeComponent},
   {path:"Products" ,component:CategoryListComponent},
@@ -39,7 +39,7 @@ const appRoute:Routes=[
     RouterModule.forRoot(appRoute),
     HttpClientModule,
     NgbModule,
-    ProductDashboardModule
+    // ProductDashboardModule
   ],
   providers: [],
   bootstrap: [AppComponent]
