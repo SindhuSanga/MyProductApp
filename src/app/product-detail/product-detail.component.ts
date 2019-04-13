@@ -40,8 +40,8 @@ export class ProductDetailComponent implements OnInit {
   }
   
   getProductDetail() {
-    // this.data1 = this.productDetail
-    this.pData =this.productDetail.find(item =>item.pName == this.prodData);
+    
+    this.pData =this.productDetail.filter(item =>item.pName == this.prodData);
     console.log(this.pData);
   }
   getEachProductDetail() {
@@ -54,19 +54,13 @@ export class ProductDetailComponent implements OnInit {
     console.log(this.eachProductDetail);
   }
   showConfigResponse() {
-    // this.configService.getConfigResponse()
-    //   .subscribe(resp => {
-    //     console.log(resp)
-    //     const keys = resp.headers.keys();
-    //     this.headers = keys.map(key =>
-    //       `${key}: ${resp.headers.get(key)}`);
-
-          
-    //     this.productDetail = { ... resp.body };
-    //     console.log(keys)
-    //     // this.getProductDetail();
-      // });
-      this.data1= this.configService.getArticle(this.prodData);
-      console.log(this.data1);
+    this.configService.getConfigResponse()
+      .subscribe(resp => {
+        console.log(resp)
+        this.productDetail =resp.body;
+         this.getProductDetail();
+         this.getEachProductDetail()
+      });
+     
   }
 }

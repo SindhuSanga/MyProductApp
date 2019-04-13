@@ -6,7 +6,6 @@ import { Observable, throwError } from 'rxjs';
 import { catchError, retry } from 'rxjs/operators';
 
 export interface Config {
-//  filter(arg0: (item: any) => boolean): any;
   
   "pName":"string",
   "pTypes":Config1
@@ -26,20 +25,8 @@ export interface Config {
 export class ProductDetailConfigService {
   configUrl = 'assets/config3.json';
   constructor(private http: HttpClient) { }
-
-
-  // Demo code
-  getArticle(prodData: string) {
-    return this.http.get('assets/config3.json')
-    .pipe(
-      map(res => res.json())
-        .toPromise()
-        .then(articles => articles.filter(item =>item.pName == prodData))
-  );
-       
-  }
-  getConfigResponse(): Observable<HttpResponse<Config>> {
-    return this.http.get<Config>(
+  getConfigResponse(): Observable<HttpResponse<any>> {
+    return this.http.get<any>(
       this.configUrl, { observe: 'response' }); 
   }
   

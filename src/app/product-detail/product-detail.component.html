@@ -1,9 +1,10 @@
-<h1>{{eachProductDetail[0].catname}} Details</h1>
+
 <!-- <img class="img-class" [src]="eachProductDetail[0].image" /> -->
 
 <button (click)=" showConfigResponse()">getResponse</button>
-<div class="container">
-  <div *ngFor="let details of eachProductDetail[0]">
+<div class="container" *ngIf="productDetail">
+    <h1>{{eachProductDetail[0].catname}} Details</h1>
+  <div *ngFor="let details of eachProductDetail[0].Data">
     <img class="img-class" [src]="details.image" />
     <div class="details">
       <ul>
