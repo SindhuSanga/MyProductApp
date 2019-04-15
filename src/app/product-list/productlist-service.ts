@@ -12,7 +12,6 @@ export interface Config1 {
    
   }
   export interface Config {
-    find(arg0: (product: any) => boolean): import("../product").Product;
    
     "pName": "string",
     "pTypes": Config1[],
@@ -24,8 +23,8 @@ export class ProductListConfigService {
   configUrl = 'assets/config2.json';
   constructor(private http: HttpClient) { }
 
-  getConfigResponse(): Observable<HttpResponse<Config>> {
-    return this.http.get<Config>(
+  getConfigResponse(): Observable<HttpResponse<any>> {
+    return this.http.get<any>(
       this.configUrl, { observe: 'response' }); 
   }
   

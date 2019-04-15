@@ -11,13 +11,13 @@ import { Config,ProductListConfigService } from './productlist-service';
   styleUrls: ['./product-list.component.css']
 })
 export class ProductListComponent implements OnInit {
-  selectedProd: Product;
+  selectedProd: {};
 
   catName: string;
 
   error: any;
   headers: string[];
-  categoryData: Config;
+  categoryData: Config[];
   config: Config;
 
   constructor(private route: ActivatedRoute,private configService: ProductListConfigService) {
@@ -37,7 +37,7 @@ export class ProductListComponent implements OnInit {
   }
   getSelectedProduct() {
 
-    this.selectedProd =  this.categoryData.find(product => product.pName == this.catName)
+    this.selectedProd =  this.categoryData.filter(product => product.pName == this.catName)
     console.log(this.selectedProd)
 
   }
