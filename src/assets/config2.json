@@ -10,8 +10,28 @@
                 "image": "assets/images/laptop.jpg"
             },
             {
-                "catname": "Fridge",
+                "catname": "Refrigerator",
                 "image": "assets/images/fridge.jpg"
+            },
+            {
+                "catname": "Smart Wearble Tech",
+                "image": "assets/images/smart.jpg"
+            },
+            {
+                "catname": "Health Care Appliances",
+                "image": "assets/images/health.jpeg"
+            },
+            {
+                "catname": "Desktop PCs",
+                "image": "assets/images/desktop.jpg"
+            },
+            {
+                "catname": "Gaming & Accessories",
+                "image": "assets/images/gaming.jpg"
+            },
+            {
+                "catname": "Camera",
+                "image": "assets/images/camera.jpg"
             }
         ]
     },
@@ -19,12 +39,28 @@
         "pName": "Fashion",
         "pTypes": [
             {
-                "catname": "Clothing",
-                "image": "assets/images/fashion.jpg"
+                "catname": "Mens Wear",
+                "image": "assets/images/menswear.jpg"
             },
             {
-                "catname": "FootWear",
-                "image": "assets/images/fashion.jpg"
+                "catname": "Womens Wear",
+                "image": "assets/images/womenswear.jpg"
+            },
+            {
+                "catname": "Accessories",
+                "image": "assets/images/womenaccessories.jpg"
+            },
+            {
+                "catname": "Womens FootWear",
+                "image": "assets/images/womensfootwear.jpg" 
+            },
+            {
+                "catname": "Mens FootWear",
+                "image": "assets/images/mensfootwear.jpg"
+            },
+            {
+                "catname": "Beauty Products",
+                "image": "assets/images/beauty.jpg"
             }
         ]
     },
@@ -33,12 +69,99 @@
         "pTypes": [
             {
                 "catname": "Wardrobe",
-                "image": "assets/images/furniture.jpg"
+                "image": "assets/images/wardrobe.jpg"
             },
             {
                 "catname": "Beds",
-                "image": "assets/images/furniture.jpg"
+                "image": "assets/images/beds.jpg"
+            },
+            {
+                "catname": "Sofas",
+                "image": "assets/images/sofa.jpg"  
+            },
+            {
+                "catname": "DiningTable & Sets",
+                "image": "assets/images/dining.jpg"
             }
         ]
+    },
+    {
+        "pName": "Books",
+        "pTypes": [
+            {
+                "catname": "EntranceExam",
+                "image": "assets/images/entrance.jpg"
+            },
+            {
+                "catname": "Academic",
+                "image": "assets/images/academic.jpg"
+            },
+            {
+                "catname": "Literature & Fiction",
+                "image": "assets/images/fiction.jpg"  
+            },
+            {
+                "catname": "Biographies",
+                "image": "assets/images/bio.jpg"
+            }
+        ]
+    },
+    {
+        "pName": "Sports",
+        "pTypes": [
+            {
+                "catname": "Cricket",
+                "image": "assets/images/cricket.jpg"
+            },
+            {
+                "catname": "Badminton",
+                "image": "assets/images/badminton.jpg"
+            },
+            {
+                "catname": "Football",
+                "image": "assets/images/football.jpg"  
+            },
+            {
+                "catname": "Camping & Hiking",
+                "image": "assets/images/camping.jpg"
+            },
+            {
+                "catname": "Skating",
+                "image": "assets/images/skates.jpg"
+            },
+            {
+                "catname": "Swimming",
+                "image": "assets/images/swim.jpg"
+            }
+        ]   
+    },
+    {
+        "pName": "Baby & Kids",
+        "pTypes": [
+            {
+                "catname": "KidsWear",
+                "image": "assets/images/kidswear.jpg"
+            },
+            {
+                "catname": "KidsToys",
+                "image": "assets/images/kidstoys.jpg"
+            },
+            {
+                "catname": "Winter Wear",
+                "image": "assets/images/winter.jpg"  
+            },
+            {
+                "catname": "FootWear",
+                "image": "assets/images/kidsfoot.jpg"
+            },
+            {
+                "catname": "Babycare",
+                "image": "assets/images/babycare.jpg"
+            },
+            {
+                "catname": "SchoolSupplies",
+                "image": "assets/images/school.jpg"
+            }
+        ]   
     }
 ]

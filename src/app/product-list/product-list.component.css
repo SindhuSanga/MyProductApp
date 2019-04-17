@@ -2,7 +2,7 @@ img.imgclass {
     width: 150px;
     height: 150px;
     box-sizing: border-box;
-    box-shadow: 2px 2px 2px 2px rebeccapurple;
+    box-shadow: 2px 2px 2px 2px #15121208;
     cursor: pointer;
     transition: 1s;
    }

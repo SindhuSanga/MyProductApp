@@ -1,10 +1,6 @@
 
-<!-- <img class="img-class" [src]="eachProductDetail[0].image" /> -->
 
-
-<div class="container">
-<button (click)=" showConfigResponse()">getResponse</button>
-<div class="container" *ngIf="productDetail">
+<div class="details-container" *ngIf="productDetail">
     <h1>{{eachProductDetail[0].catname}} Details</h1>
   <div *ngFor="let details of eachProductDetail[0].Data">
     <img class="img-class" [src]="details.image" />
@@ -13,7 +9,5 @@
           <li>Type: {{details.type}}</li>
           <li>Price: {{details.price}}</li>
       </ul>
-      
-    </div>
   </div>
 </div>

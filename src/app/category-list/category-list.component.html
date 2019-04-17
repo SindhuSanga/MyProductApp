@@ -1,12 +1,12 @@
-
-<div class="container">
-    <h3 class="heading"> List Of Categories </h3>
+<h3 class="heading"> List Of Categories </h3>
+<div class="product-container">
+    
     <ul>  
     <li class="productsList" *ngFor="let pList of prodList" >        
-   <a class="panel" routerLink="productList/{{pList.pName}}" routerLinkActive="Active">{{pList.pName}}</a>
+   <a class="panel" routerLink="productList/{{pList.pName}}" routerLinkActive="Active">
    <div class="image">
         <img class="imageClass" [src]="pList.image">
-       </div>
+       </div>{{pList.pName}}</a>
 </li>
 </ul>
 </div>
