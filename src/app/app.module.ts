@@ -16,6 +16,7 @@ import { LoginComponent } from './login/login.component';
 
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { AlertComponent } from './alert/alert.component';
+import { RegisterComponent } from './register/register.component';
 
 
 
@@ -30,6 +31,7 @@ import { AlertComponent } from './alert/alert.component';
     HomeComponent,
     LoginComponent,
     AlertComponent,
+    RegisterComponent,
     
    
     
