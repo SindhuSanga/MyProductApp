@@ -19,6 +19,7 @@ import { AlertComponent } from './alert/alert.component';
 
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -28,7 +29,8 @@ import { AlertComponent } from './alert/alert.component';
     ConfigComponent,
     HomeComponent,
     LoginComponent,
-    AlertComponent
+    AlertComponent,
+    
    
     
   ],
