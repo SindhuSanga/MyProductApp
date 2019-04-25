@@ -15,6 +15,7 @@ import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
 
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
+import { AlertComponent } from './alert/alert.component';
 
 
 
@@ -26,7 +27,8 @@ import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
     ProductDetailComponent,
     ConfigComponent,
     HomeComponent,
-    LoginComponent
+    LoginComponent,
+    AlertComponent
    
     
   ],

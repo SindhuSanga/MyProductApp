@@ -1,37 +1,22 @@
-<header class="products" id="cssmenu">
+<header class="products">
    <div class="header-Logo">
       <a href="/"><img class="logo" src="assets/images/logo.jpg" /></a>
    </div>
    <div>
       <input class=" desktop-searchbar" placeholder="Search for Products,Brands">
    </div>
-   <div>
+   <div class="nav-bar-nav">
       <ul>
-         <li class="nav-bar">
-            <a routerLink="Home">Home</a>
-
+         <li class="nav-bar"><a routerLink="Home">Home</a></li>
+         <li class="nav-bar"><a routerLink="Config">Services</a></li>
+         <li class="nav-bar nav" id="hoverItem"><a routerLink="Products"> Products&#9662;</a>
+            <ul class="HiddenText">
+               <li class="sub-products"><a href="#">Menu 1</a></li>
+               <li class="sub-products"><a href="#">Menu 2</a></li>
+            </ul>
          </li>
-         <li class="nav-bar">
-            <a routerLink="Config">Services</a>
-
-         </li>
-         <div>
-            <li class="nav-bar nav" id="hoverItem"><a routerLink="Products"> Products</a>
-               <div>
-                  <ul id="HiddenText">
-                     <li class="sub-products"><a href="#">Menu 1</a></li>
-                     <li class="sub-products"><a href="#">Menu 2</a></li>
-                  </ul>
-               </div>
-            </li>
-         </div>
-
-         <li class="nav-bar">
-            <a routerLink="Contact">Contact Us </a>
-         </li>
-         <li class="nav-bar">
-            <a routerLink="Dashboard">Dashboard </a>
-         </li>
+         <li class="nav-bar"><a routerLink="Contact">Contact Us </a></li>
+         <li class="nav-bar"><a routerLink="Dashboard">Dashboard </a></li>
       </ul>
    </div>
 </header>
