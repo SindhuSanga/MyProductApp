@@ -3,8 +3,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { Subscription } from 'rxjs';
 import { first } from 'rxjs/operators';
 
-import { User } from '../services/authentication.service';
-import { UserService, AuthenticationService } from '../services';
+import { User,AuthenticationService } from '../services/authentication.service';
+import { UserService} from '../services/user.service';
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
