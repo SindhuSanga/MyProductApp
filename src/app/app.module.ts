@@ -13,7 +13,8 @@ import { ProductDetailComponent } from './product-detail/product-detail.componen
 import { ConfigComponent } from './config/config.component';
 import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
-
+import { ErrorInterceptor } from './services/error.interceptor';
+import { JwtInterceptor } from './services/jwt.interceptor';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { AlertComponent } from './alert/alert.component';
 import { RegisterComponent } from './register/register.component';
@@ -45,6 +46,8 @@ import { RegisterComponent } from './register/register.component';
     ReactiveFormsModule
   ],
   providers: [
+    ErrorInterceptor,
+    JwtInterceptor
     // { provide: HTTP_INTERCEPTORS, useClass: JwtInterceptor, multi: true },
     //     { provide: HTTP_INTERCEPTORS, useClass: ErrorInterceptor, multi: true },
   ],

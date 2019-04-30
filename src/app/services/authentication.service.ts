@@ -11,11 +11,15 @@ export interface User {
   token: string;
 }
 
+
 @Injectable({
   providedIn: 'root'
 })
 export class AuthenticationService {
- config: any;
+  
+apiUrl:string = 'http://localhost:4000';
+
+//  config: any;
   private currentUserSubject: BehaviorSubject<User>;
   public currentUser: Observable<User>;
 
@@ -29,7 +33,7 @@ export class AuthenticationService {
   }
 
   login(username:string, password:string){
-    return this.http.post<any>(`${this.config.apiUrl}/users/authenticate`, { username, password })
+    return this.http.post<any>(`${this.apiUrl}/users/authenticate`, { username, password })
     .pipe(map(user => {
         // login successful if there's a jwt token in the response
         if (user && user.token) {

@@ -6,8 +6,10 @@ import { ProductDetailComponent } from './product-detail/product-detail.componen
 import { ConfigComponent } from './config/config.component';
 import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
+import { RegisterComponent } from './register/register.component';
 const routes: Routes = [
   {path:"Home" ,component:HomeComponent},
+  {path:"register" ,component:RegisterComponent},
   {path:"login" ,component:LoginComponent},
   {path:"Products" ,component:CategoryListComponent},
   {path:"Config" ,component:ConfigComponent},
